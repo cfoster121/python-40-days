@@ -1,9 +1,8 @@
-# text = input("Enter a title: ")
-# length = len(text)
-# print("Your title has", length, "characters")
+user_prompt = "Enter a todo: "
 
-# variable = 'test test test'
-# print(type(variable))
+todos = []
 
-list = ['one', 'two', 'three', 'four']
-print(list)
+while 2 > 1:
+    todo = input(user_prompt)
+    todos.append(todo)
+    print(todos)
