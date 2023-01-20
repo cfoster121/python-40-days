@@ -4,14 +4,18 @@ todos = []
 
 while True:
     user_action = input("Type add, show, or exit: ")
+    user_action = user_action.strip()
 
     match (user_action):
-        case 'add' :
+        case 'add':
             todo = input("Enter a todo: ")
             todos.append(todo)
-        case 'show' :
-            print(todos)
-        case 'exit' :
+        case 'show':
+            for item in todos:
+                print(item)
+        case 'exit':
             break
+        case _:
+            print("Please enter 'add', 'show', or 'exit'")
 
 print("Bye")
