@@ -1,0 +1,4 @@
+prompt = "Enter a todo:"
+print(prompt)
+user_text = input()
+print(user_text)
