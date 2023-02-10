@@ -38,8 +38,19 @@ while True:
                 todos = file.writelines(todos)
 
         case 'complete':
+            with open('files/todos.txt', 'r') as file:
+                todos = file.readlines()
+
             number = int(input("Which number todo item to complete?: "))
-            todos.pop(number - 1)
+            index = number - 1
+            completed = todos[index].strip('\n')
+            todos.pop(index)
+
+            with open('files/todos.txt', 'w') as file:
+                todos = file.writelines(todos)
+
+            print(f"{completed} completed!")
+
         case 'exit':
             break
         case _:

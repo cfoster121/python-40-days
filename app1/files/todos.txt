@@ -1,5 +1,4 @@
 clean
 shop
-study at the library
-shop
-clean
+study
+cook
