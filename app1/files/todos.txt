@@ -1,4 +1,3 @@
 clean
-shop
-study
+read
 cook
