@@ -1,3 +1,6 @@
 clean
 read
 cook
+clean
+run
+cook
