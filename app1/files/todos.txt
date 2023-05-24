@@ -3,4 +3,4 @@ read
 cook
 clean
 run
-cook
+show
